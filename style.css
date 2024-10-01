@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#ui-builder {
+    display: flex;
+    margin: 20px;
+}
+
+#left-sidebar, #right-sidebar {
+    width: 20%;
+    background: #ffffff;
+    padding: 10px;
+    border: 1px solid #dddddd;
+}
+
+#canvas {
+    width: 60%;
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+}
+
+.component {
+    padding: 5px;
+    margin: 5px;
+    background: #e7e7e7;
+    cursor: move;
+}
+
+#drop-area {
+    min-height: 200px;
+    border: 2px dashed #ccc;
+    text-align: center;
+    line-height: 200px;
+}
