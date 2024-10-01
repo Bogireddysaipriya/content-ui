@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server-Driven UI</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Website Builder</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog/News</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <div id="ui-builder">
+            <div id="left-sidebar">
+                <h2>Components</h2>
+                <div class="component" draggable="true">Text Block</div>
+                <div class="component" draggable="true">Image Block</div>
+                <div class="component" draggable="true">Button Block</div>
+            </div>
+            <div id="canvas">
+                <h2>Canvas</h2>
+                <div id="drop-area">Drop components here</div>
+            </div>
+            <div id="right-sidebar">
+                <h2>Settings</h2>
+                <div>
+                    <label for="css-style">CSS Style:</label>
+                    <input type="text" id="css-style" placeholder="e.g., color: red;">
+                </div>
+                <button id="apply-style">Apply Style</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
