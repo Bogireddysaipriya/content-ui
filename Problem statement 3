@@ -1,0 +1,28 @@
+import json
+
+# Sample prompts and their corresponding web components
+component_map = {
+    "button": "<button>{text}</button>",
+    "input": "<input type='{input_type}' placeholder='{placeholder}' />",
+    "heading": "<h1>{text}</h1>"
+}
+
+# Function to generate web component based on a prompt
+def generate_component_from_prompt(prompt):
+    # Basic prompt processing (for more advanced, AI could be applied here)
+    prompt_parts = prompt.lower().split(" ")
+    if "button" in prompt:
+        return component_map["button"].format(text=prompt_parts[-1])
+    elif "input" in prompt:
+        return component_map["input"].format(input_type=prompt_parts[1], placeholder=prompt_parts[-1])
+    elif "heading" in prompt:
+        return component_map["heading"].format(text=prompt_parts[-1])
+    else:
+        return "Component not recognized"
+
+# Example usage
+prompt = "Create a button with the text 'Submit'"
+generated_component = generate_component_from_prompt(prompt)
+
+# Output the generated web component
+print(generated_component)
